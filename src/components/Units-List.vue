@@ -1,5 +1,8 @@
 <template>
   <div class="md:container mt-6 md:mx-auto flex justify-center items-center">
+    <CostsFilter />
+  </div>
+  <div class="md:container mt-2 md:mx-auto flex justify-center items-center">
     <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
       <table
         class="table-auto w-3/5 text-sm text-left text-gray-500 dark:text-gray-400"
@@ -57,9 +60,13 @@
 </template>
 
 <script>
+import CostsFilter from "@//components/CostsFilter.vue";
+
 export default {
   name: "Units-List",
-  components: {},
+  components: {
+    CostsFilter,
+  },
 };
 </script>
 
