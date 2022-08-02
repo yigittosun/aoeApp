@@ -2,7 +2,7 @@
   <div
     class="Range w-[35rem] flex flex-col justify-between mt-8 mr-8 mb-0 ml-8 h-80"
   >
-    <h4 class="font-bold mb-10 text-white">Costs</h4>
+    <h4 class="font-bold mb-10 text-white">Costs Filter</h4>
     <div class="flex justify-between mb-16 items-center">
       <input type="checkbox" id="wood" value="wood" v-model="checkedFilter" />
       <label for="wood" class="ml-1 text-white">Wood</label>
