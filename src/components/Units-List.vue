@@ -40,6 +40,7 @@
               <button>
                 <font-awesome-icon
                   :icon="['fas', 'magnifying-glass']"
+                  :style="{ color: 'gray' }"
                   @click="detail()"
                 />
               </button>
