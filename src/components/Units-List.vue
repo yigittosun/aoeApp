@@ -36,8 +36,13 @@
             <td class="py-5 px-6">
               {{ unit.cost }}
             </td>
-            <td class="py-5 px-6">
-              {{ "-" }}
+            <td class="py-5 px-9">
+              <button>
+                <font-awesome-icon
+                  :icon="['fas', 'magnifying-glass']"
+                  @click="detail()"
+                />
+              </button>
             </td>
           </tr>
         </tbody>
