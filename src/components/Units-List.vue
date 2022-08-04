@@ -39,6 +39,7 @@
             <td class="py-5 px-9">
               <button>
                 <font-awesome-icon
+                  class="magnifying-glass"
                   :icon="['fas', 'magnifying-glass']"
                   :style="{ color: 'gray' }"
                   @click="detail()"
@@ -67,4 +68,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@import "../styles/style.scss";
+.magnifying-glass {
+  &:hover {
+    color: $turquoise !important;
+  }
+}
+</style>

@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import "./styles//style.scss";
 import TopBar from "@/components/Topbar-menu.vue";
 import dataset from "./dataset/age-of-empires-units.json";
 import { mapActions } from "vuex";
@@ -24,8 +25,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-body {
-  background-color: #000;
-}
-</style>
+<style lang="scss"></style>
