@@ -7,7 +7,7 @@
         <thead
           class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
         >
-          <th scope="col" class="bg-cyan-700 py-3 px-6">
+          <th scope="col" class="bg-black py-3 px-6">
             <router-link
               class="text-white"
               :to="{
@@ -22,7 +22,7 @@
               Back</router-link
             >
           </th>
-          <td class="py-5 px-6 bg-cyan-700 text-black"></td>
+          <td class="py-5 px-6 bg-black text-black"></td>
           <tr>
             <th scope="col" class="py-3 px-6">id :</th>
             <td class="py-5 px-6 bg-white text-black">
