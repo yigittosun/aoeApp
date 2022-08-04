@@ -37,14 +37,20 @@
               {{ unit.cost }}
             </td>
             <td class="py-5 px-9">
-              <button>
+              <router-link
+                :to="{
+                  name: 'Units-Detail',
+                  params: {
+                    id: unit.id,
+                  },
+                }"
+              >
                 <font-awesome-icon
                   class="magnifying-glass"
                   :icon="['fas', 'magnifying-glass']"
                   :style="{ color: 'gray' }"
-                  @click="detail()"
                 />
-              </button>
+              </router-link>
             </td>
           </tr>
         </tbody>
