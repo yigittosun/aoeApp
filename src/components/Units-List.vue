@@ -27,34 +27,7 @@
             v-for="(unit, index) in getUnits"
             :key="unit.id + index"
           >
-            <td class="py-5 px-6">
-              {{ unit.id }}
-            </td>
-            <td class="py-5 px-6">
-              {{ unit.name }}
-            </td>
-            <td class="py-5 px-6">
-              {{ unit.age }}
-            </td>
-            <td class="py-5 px-6">
-              {{ unit.cost }}
-            </td>
-            <td class="py-5 px-9">
-              <router-link
-                :to="{
-                  name: 'Units-Detail',
-                  params: {
-                    id: unit.id,
-                  },
-                }"
-              >
-                <font-awesome-icon
-                  class="magnifying-glass"
-                  :icon="['fas', 'magnifying-glass']"
-                  :style="{ color: 'gray' }"
-                />
-              </router-link>
-            </td>
+            <TableContent :unit="unit" />
           </tr>
         </tbody>
       </table>
@@ -66,21 +39,27 @@
 import CostsFilter from "../components/CostsFilter.vue";
 import AgesFilter from "../components/AgeFilter.vue";
 import { mapGetters, mapActions } from "vuex";
+import TableContent from "../components/TableContent.vue";
 
 export default {
   name: "Unit-list",
   components: {
     CostsFilter,
     AgesFilter,
+    TableContent,
+  },
+  props: {
+    unit: Object,
   },
   mounted() {
     this.setAgeFilter("All");
+    this.setCostFilter([]);
   },
   computed: {
     ...mapGetters("units", ["getUnits"]),
   },
   methods: {
-    ...mapActions("units", ["setAgeFilter"]),
+    ...mapActions("units", ["setAgeFilter", "setCostFilter"]),
   },
 };
 </script>
