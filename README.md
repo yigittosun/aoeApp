@@ -1,34 +1,18 @@
-# aoe
+# AoE
 
-## Project setup
-```
-npm install
-```
+## Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Table of age of empires units from which data is pulled from json file using `vuex` and prepared using age and costs filters
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Built With
 
-### Run your unit tests
-```
-npm run test:unit
-```
+- [Vue.js](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com)
+- [@vueform/slider](https://github.com/vueform/slider)
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+## Overview
 
-### Lints and fixes files
-```
-npm run lint
-```
+- `/` - Home page.
+- `/units` - List of Units.
+- `/units/:id` - List of units detail.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
