@@ -1,5 +1,8 @@
 <template>
   <div class="md:container mt-6 md:mx-auto flex justify-center items-center">
+    <AgesFilter />
+  </div>
+  <div class="md:container mt-6 md:mx-auto flex justify-center items-center">
     <CostsFilter />
   </div>
   <div class="md:container mt-2 md:mx-auto flex justify-center items-center">
@@ -61,15 +64,23 @@
 
 <script>
 import CostsFilter from "../components/CostsFilter.vue";
-import { mapGetters } from "vuex";
+import AgesFilter from "../components/AgeFilter.vue";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Unit-list",
   components: {
     CostsFilter,
+    AgesFilter,
+  },
+  mounted() {
+    this.setAgeFilter("All");
   },
   computed: {
     ...mapGetters("units", ["getUnits"]),
+  },
+  methods: {
+    ...mapActions("units", ["setAgeFilter"]),
   },
 };
 </script>

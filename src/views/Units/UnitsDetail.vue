@@ -1,5 +1,7 @@
 <template>
-  <div class="md:container mt-10 md:mx-auto flex justify-center items-center">
+  <div
+    class="md:container mt-10 mb-5 md:mx-auto flex justify-center items-center"
+  >
     <div class="overflow-x relative shadow-md sm:rounded-lg">
       <table
         class="table-fixed text-sm text-left text-gray-500 dark:text-gray-400 md:w-full"
